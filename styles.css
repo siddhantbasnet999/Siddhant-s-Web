@@ -1,108 +1,57 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #fff;
-  }
-  
-  /* Header and Navbar */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    padding: 20px 40px;
-  }
-  
-  .logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    animation: logoFadeIn 1s ease-out;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Bio Section */
-  .bio {
-    background-color: #000;
-    text-align: center;
-    padding: 60px 20px;
-    animation: fadeInText 2s ease-in;
-  }
-  
-  .bio h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .bio .tagline {
-    font-size: 1.5rem;
-    font-style: italic;
-    color: #999;
-    margin-bottom: 10px;
-  }
-  
-  .bio .roles {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .bio .mission {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Social Media */
-  .social-media a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #ccc;
-    transition: color 0.3s;
-  }
-  
-  .social-media a:hover {
-    color: #fff;
-  }
-  
-  /* Animations */
-  @keyframes logoFadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.6);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  @keyframes fadeInText {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
+
+/* Social Icons Styling */
+.social-icons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Intro Section */
+.intro {
+  margin-top: 100px;
+  max-width: 600px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.intro p, .intro ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.intro ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
